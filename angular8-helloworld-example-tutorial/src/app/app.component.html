@@ -1,0 +1,28 @@
+<app-menu></app-menu>
+
+
+<div class="container col-md-6">
+  <div class="card">
+      <div class="card-header">
+          <h3>Operacion</h3>
+      </div>
+      <div class="card-body">
+
+  <div class="form-group">
+      <input type="number" class="form-control" placeholder="Ingrese valor 1" id="val1" [(ngModel)]="val1">
+  </div>
+      <div class="form-group">
+        <input type="number" class="form-control" placeholder="Ingrese valor 2" id="val2" [(ngModel)]="val2">
+      </div>
+  <button  (click)="Sumaa()" class="btn btn-danger">Sumar</button>
+      <div class="form-group">
+         <input type="number" class="form-control" placeholder="Resultado" id="val3" [(ngModel)]="rta">
+         <input type="text" class="form-control" placeholder="Numero1" id="val4" [(ngModel)]="rta4">
+         <router-outlet></router-outlet>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
